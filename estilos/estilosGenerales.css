@@ -5,11 +5,19 @@
     box-sizing: border-box;
     
     background-color: rgb(208, 211, 212);
+    font-family: "Ubuntu", sans-serif;
 }
 
 
-
+/*header y footer logos*/
 .logoIMG {
     width: 50px ;
     height: 50px ;
+}
+
+
+/*links*/
+a{
+    text-decoration: none;
+    
 }
