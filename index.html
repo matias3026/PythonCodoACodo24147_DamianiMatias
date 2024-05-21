@@ -6,6 +6,7 @@
     <title>Python Store</title>
     <!-- Estilos-->
     <link rel="stylesheet" href="./estilos/estilosGenerales.css">
+    <link rel="stylesheet" href="./estilos/estilosIndex.css">
     <!--Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,27 +34,40 @@
                 <img class="logoIMG" src="./imagenes/iniciar-sesion.png" alt="Logo" />
             </a>
         </div>
+        
 
         
     </header>
     <hr>
     
     <main>
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>Últimas novedades en tecnología: Laptops, Desktops, Software y más!</span>
+                <span>Grandes descuentos en productos seleccionados!</span>
+                <span>Nuevos ingresos: accesorios de gaming de alta calidad!</span>
+                <span>Servicios de soporte técnico profesional!</span>
+            </div>
+        </div>
+        
         <section class="titulo-descripcion">
+            <h1>Python Store</h1>
+            <p id="epigrafe">Tu fuente confiable para hardware, software y soluciones tecnológicas</p>
 
         </section>
 
         <section class="imagen-principal">
+            <img id="imgPrincipal"  src="./imagenes/imgIndex3.jpg" alt="gabinete con luz roja">
 
         </section>
+        
+        <div class="botones">
+            <a href="productos.html" class="boton">Ir a la Tienda</a>
+            <a href="contacto.html" class="boton">Contactenos</a>
 
-        <div class="log-registro">
-           
-            
         </div>
-
-
-
+        
+        
 
     </main>
     <hr>
@@ -86,6 +100,6 @@
     </footer>
 
 
-    
+<script src="./scripts/ocultarMarquee.js"></script>    
 </body>
 </html>
