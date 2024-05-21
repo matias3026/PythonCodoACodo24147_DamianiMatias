@@ -4,8 +4,32 @@
     padding: 0;
     box-sizing: border-box;
     
-    background-color: rgb(208, 211, 212);
+    background-color: rgb(255, 255, 255);
     font-family: "Ubuntu", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: 15vh;
+    padding: 1%;
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav > ul,li{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 10px;
 }
 
 
@@ -20,4 +44,45 @@
 a{
     text-decoration: none;
     
+}
+main{
+    width: 100%;
+    height: 65vh;
+}
+
+footer{
+    width: 100%;
+    height: 20vh;
+    padding: 1%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footerSuperior {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerSuperior > div > ul {
+    display: flex;
+    flex-direction: row;
+
+}
+.footerInferior{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+.footerInferior > div > p{
+    color: rgb(185, 185, 185);
 }
