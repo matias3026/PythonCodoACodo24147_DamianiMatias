@@ -1,44 +1,35 @@
-main{
+main {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
-    background-color:black;
-    
+    background-color: black;
 }
-
-
-
 
 .titulo-descripcion, .imagen-principal {
     flex: 1 1 50%;
     min-height: 60vh;
     padding: 5px;
-    background-color:black;
-    
-    
+    background-color: black;
 }
-
-
-
 
 #imgPrincipal {
     width: 100%;
     height: auto;
-    background-color:black;
+    background-color: black;
 }
 
 h1 {
     font-size: 8.5rem;
     margin-bottom: 20px;
-    background-color:black;
+    background-color: black;
     color: aliceblue;
 }
 
 #epigrafe {
     font-size: 1.8rem;
-    background-color:black;
+    background-color: black;
     color: aliceblue;
 }
 
@@ -50,13 +41,11 @@ h1 {
     padding: 10px 0;
     top: 15vh;
     position: sticky;
-    
 }
 
 .marquee-content {
     display: flex;
     animation: marquee 30s linear infinite;
-    
 }
 
 .marquee-content span {
@@ -64,7 +53,6 @@ h1 {
     white-space: nowrap;
     background: black;
     color: white;
-    
 }
 
 @keyframes marquee {
@@ -76,23 +64,24 @@ h1 {
     }
 }
 
-.botones{
+.botones {
     width: 100%;
     background-color: black;
     display: flex;
-    flex-flow: row wrap;
+    justify-content: flex-start; 
     margin-top: 10px;
-    
 }
-.boton{
+
+.boton {
     background-color: #333; 
     color: #fff; 
     border: 2px solid #fff; 
     padding: 10px 20px; 
     border-radius: 5px; 
     cursor: pointer; 
-    margin-left: 5px;
-    
+    flex: 0 1 auto; 
+    text-align: center; 
+    margin: 0 5px; 
 }    
 
 .boton:hover { 

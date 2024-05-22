@@ -1,14 +1,14 @@
 /* Estilos para la sección 'Acerca de nosotros' */
 .acerca-de-nosotros {
-    background-color: #f8f9fa; /* Fondo ligero para contraste */
+    background-color: #f8f9fa; 
     padding: 2% 5%;
-    color: #333; /* Color de texto principal */
+    color: #333; 
 }
 
 .acerca-de-nosotros h2 {
     font-size: 2.5rem;
-    color: #007bff; /* Azul tecnológico */
-    border-bottom: 2px solid #007bff; /* Línea inferior azul */
+    color: #007bff; 
+    border-bottom: 2px solid #007bff; 
     padding-bottom: 10px;
     margin-bottom: 20px;
     text-align: center;
@@ -16,7 +16,7 @@
 
 .acerca-de-nosotros h3 {
     font-size: 1.8rem;
-    color: #0056b3; /* Azul más oscuro para subtítulos */
+    color: #0056b3; 
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -42,7 +42,7 @@
 }
 
 .acerca-de-nosotros ul li::before {
-    /* content: '>'; */
+    content: '>'; 
     color: #007bff;
     position: absolute;
     left: 0;
