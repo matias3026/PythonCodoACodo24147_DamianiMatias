@@ -5,6 +5,8 @@ main {
     justify-content: space-between;
     padding: 20px;
     background-color: black;
+    max-width: 1400px;
+    width: 100%;
 }
 
 .titulo-descripcion, .imagen-principal {
@@ -12,6 +14,8 @@ main {
     min-height: 60vh;
     padding: 5px;
     background-color: black;
+    max-width:100%;
+    
 }
 
 #imgPrincipal {
@@ -25,6 +29,8 @@ h1 {
     margin-bottom: 20px;
     background-color: black;
     color: aliceblue;
+    max-width: 100%;
+    width: 100%;
 }
 
 #epigrafe {
@@ -89,3 +95,68 @@ h1 {
 }
 
 /*medias query*/
+@media (max-width:955px) {
+    main{
+        display: block;
+        padding: 10;
+    }
+    h1{
+        font-size: 5rem;
+        text-align: center;
+    }
+    #epigrafe{
+        text-align: center;
+        
+    }
+    .titulo-descripcion, .imagen-principal {
+        min-height: 30vh;
+
+    }
+    
+
+
+}
+@media (max-width:615px) {
+    .marquee{
+        display: none;
+    }
+    
+    
+}
+
+@media (max-width:500px) {
+    h1{
+        font-size: 4rem;
+        
+    }
+    
+
+    
+}
+
+@media (max-width:491px) {
+    
+    #epigrafe{
+        text-align: center;
+        
+    }
+    .botones{
+        display: flex;
+        flex-flow: column wrap;
+        max-width: 100%;
+        min-width: 100%;
+        gap: 10px;
+        
+
+    }
+    .imagen-principal{
+        
+        display: none;
+    }
+    
+    .titulo-descripcion, .imagen-principal {
+        min-height: 25vh;
+    }
+
+    
+}
