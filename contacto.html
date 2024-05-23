@@ -6,6 +6,7 @@
     <title>Python Store</title>
     <!-- Estilos-->
     <link rel="stylesheet" href="./estilos/estilosGenerales.css">
+    <link rel="stylesheet" href="./estilos/estilosContacto.css">
     <!--Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,12 +39,57 @@
     </header>
     <hr>
     <main>
+    
+        <div class="contacto-container">
+            <h2>Contacto</h2>
+            <form id="contacto-form" action="#" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+                <div class="form-group">
+                    <label id="ms" for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="motivo">Motivo de contacto:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="">Seleccionar</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="sugerencia">Sugerencia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <div class="form-group2">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Deseo recibir el boletín informativo?</label>
+                    </div>
+                </div>
+                
+                <!-- <div class="form-group">
+                    <label for="adjuntar">Adjuntar archivo:</label>
+                    <input type="file" id="adjuntar" name="adjuntar">
+                </div> -->
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
+    </main>
+        
         
 
 
 
 
-    </main>
+    
     <hr>
     <footer>
         <div class="footerSuperior">

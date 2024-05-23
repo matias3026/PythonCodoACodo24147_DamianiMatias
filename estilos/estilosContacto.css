@@ -1,0 +1,167 @@
+/* Estilos generales (mantenidos de tu código original) */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacto-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 300px;
+}
+
+.form-group2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#mensaje, input {
+    width: 300px;
+    height: 25px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#ms {
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#newsletter {
+    width: 50px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Media queries para hacer el diseño responsivo */
+
+/* Punto de corte para pantallas pequeñas (480px o menos) */
+@media (max-width: 480px) {
+    .contacto-container {
+        width: 90%;
+        padding: 5%;
+    }
+
+    #mensaje, input {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 100%;
+    }
+}
+
+/* Punto de corte para pantallas medianas (768px o menos) */
+@media (max-width: 768px) {
+    .contacto-container {
+        width: 80%;
+        padding: 4%;
+    }
+
+    .form-group, #mensaje, input {
+        width: 90%;
+    }
+
+    /* Cambios en estilos visuales */
+    .btn {
+        padding: 12px 25px; /* Botones más grandes */
+        font-size: 1.1em; /* Texto más grande */
+    }
+
+    #motivo{
+        width: 80%;
+    }
+}
+
+/* Punto de corte para pantallas grandes (1024px o menos) */
+@media (max-width: 1024px) {
+    .contacto-container {
+        width: 70%;
+        padding: 3%;
+    }
+
+    .form-group, #mensaje, input {
+        width: 85%;
+    }
+
+    /* Efectos adicionales */
+    .contacto-container {
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); /* Cambio en la sombra del contenedor */
+    }
+
+    .btn {
+        padding: 14px 30px;
+        font-size: 1.2em;
+        background-color: #0056b3; /* Cambio de color en los botones */
+    }
+
+    #motivo{
+        width: 80%;
+    }
+}
+
+/* Punto de corte para pantallas muy grandes (1200px o menos) */
+@media (max-width: 1201px) {
+    .contacto-container {
+        width: 60%;
+        padding: 2%;
+    }
+
+    .form-group, #mensaje, input {
+        width: 80%;
+    }
+
+    /* Más efectos visuales */
+    .contacto-container {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    }
+
+    .btn {
+        padding: 16px 35px;
+        font-size: 1.3em;
+        background-color: #004080; /* Otro cambio de color en los botones */
+        border-radius: 10px; /* Bordes más redondeados */
+    }
+    #motivo{
+        width: 80%;
+    }
+}
