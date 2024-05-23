@@ -41,7 +41,8 @@
     <main>
     
         <div class="contacto-container">
-            <h2>Contacto</h2>
+            <h1>Contacto</h1>
+            <p id="notificacion"></p>
             <form id="contacto-form" action="#" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre:</label>
@@ -57,8 +58,9 @@
                 </div>
                 <div class="form-group">
                     <label id="ms" for="mensaje">Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="8" required >Ingrese al menos 50 caracteres</textarea>
                 </div>
+                <div id="contador-caracteres"></div>
                 <div class="form-group">
                     <label for="motivo">Motivo de contacto:</label>
                     <select id="motivo" name="motivo" required>
@@ -79,7 +81,7 @@
                     <label for="adjuntar">Adjuntar archivo:</label>
                     <input type="file" id="adjuntar" name="adjuntar">
                 </div> -->
-                <button type="submit" class="btn">Enviar</button>
+                <button type="button" class="btn" onclick="validarForm()">Enviar</button> 
             </form>
         </div>
     </main>
@@ -119,6 +121,6 @@
         
     </footer>
 
-    
+<script src="./scripts/verficarForm.js"></script>    
 </body>
 </html>
