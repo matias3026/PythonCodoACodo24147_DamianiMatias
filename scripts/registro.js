@@ -7,6 +7,16 @@ function registro(){
     alert("te registraste con exito");
 }
 
+function guardarRegistro(email, password) {
+    // Verificar si hay registros almacenados previamente
+    let registros = JSON.parse(localStorage.getItem('registros')) || [];
+
+    // Agregar el nuevo registro
+    registros.push({ email: email, password: password });
+
+    // Guardar los registros actualizados en localStorage
+    localStorage.setItem('registros', JSON.stringify(registros));
+}
 
 
 
@@ -27,7 +37,7 @@ function validarPass(pass1 ,pass2){
 
 function validarRegistro(){
     if (validarEmail($mail.value) && validarPass($pass1.value, $pass2.value)) {
-
+        guardarRegistro($mail.value, $pass1.value);
         registro();
     }
     else{
@@ -36,3 +46,19 @@ function validarRegistro(){
 
 
 }
+
+
+//-------------------------------------------------------
+// Recuperar los registros almacenados en localStorage
+let registrosGuardados = JSON.parse(localStorage.getItem('registros'));
+
+// Verificar si hay registros y mostrarlos en la consola
+if (registrosGuardados) {
+    console.log("Registros almacenados:");
+    registrosGuardados.forEach(registro => {
+        console.log("Email: " + registro.email + ", Password: " + registro.password);
+    });
+} else {
+    console.log("No se encontraron registros almacenados.");
+}
+
