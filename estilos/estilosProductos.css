@@ -130,6 +130,8 @@ main {
     main{
         display:flex;
         flex-flow:column wrap;
+        flex-grow: 1;
+        flex-basis: 200;
     }
     .filtros{
         height: 5vh;
