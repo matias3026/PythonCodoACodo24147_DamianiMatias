@@ -183,7 +183,7 @@ h1 {
 
 .rotating {
     width: 100px; 
-    animation: rotate 2s linear infinite;
+    animation: rotate 2s linear infinite;    
 }
 
 @keyframes rotate {
