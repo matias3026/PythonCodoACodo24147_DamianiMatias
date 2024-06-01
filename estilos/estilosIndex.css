@@ -52,6 +52,7 @@ h1 {
 .marquee-content {
     display: flex;
     animation: marquee 30s linear infinite;
+    
 }
 
 .marquee-content span {
@@ -59,6 +60,7 @@ h1 {
     white-space: nowrap;
     background: black;
     color: white;
+    
 }
 
 @keyframes marquee {
@@ -159,4 +161,41 @@ h1 {
     }
 
     
+}
+
+
+
+/*animacion de pre carga*/
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.rotating {
+    width: 100px; 
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+#content {
+    display: none;
 }

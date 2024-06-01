@@ -12,97 +12,81 @@
     <!--Fuentes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="logo-boton">
-            <a href="index.html">
-                <img class="logoIMG" src="./imagenes/pylogo.png" alt="Logo" >
-            </a>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="acercaDe.html">Acerca de</a></li>
-            </ul>
-
-        </nav>
-
-        <div class="logo-boton">
-            <a href="inicioSesion.html">
-                <img class="logoIMG" src="./imagenes/iniciar-sesion.png" alt="Logo" >
-            </a>
-        </div>
-        
-
-        
-    </header>
-    <hr>
-    
-    <main>
-        <div class="marquee">
-            <div class="marquee-content">
-                <span>Últimas novedades en tecnología: Laptops, Desktops, Software y más!</span>
-                <span>Grandes descuentos en productos seleccionados!</span>
-                <span>Nuevos ingresos: accesorios de gaming de alta calidad!</span>
-                <span>Servicios de soporte técnico profesional!</span>
+    <div id="preloader">
+        <img src="./imagenes/logoPrecarga.jpg" alt="Logo Python" class="rotating">
+    </div>
+    <div id="content" style="display: none;">
+        <header>
+            <div class="logo-boton">
+                <a href="index.html">
+                    <img class="logoIMG" src="./imagenes/pylogo.png" alt="Logo" >
+                </a>
             </div>
-        </div>
-        
-        <section class="titulo-descripcion">
-            <h1>Python Store</h1>
-            <p id="epigrafe">Tu fuente confiable para hardware, software y soluciones tecnológicas</p>
-
-        </section>
-
-        <div class="imagen-principal">
-            <img id="imgPrincipal"  src="./imagenes/imgIndex3.jpg" alt="gabinete con luz roja">
-
-        </div>
-        
-        <div class="botones">
-            <a href="productos.html" class="boton">Ir a la Tienda</a>
-            <a href="contacto.html" class="boton">Contactenos</a>
-            <a href="inicioSesion.html" class="boton">Registrate Ahora!</a>
-
-        </div>
-        
-        
-
-    </main>
-    <hr>
-    <footer>
-        <div class="footerSuperior">
-            <div>
-                <h3>Atención al cliente</h3>
-                <p>Dirección: Santa Fe 1430, Buenos Aires, Argentina</p>
-                <p>Teléfono: +11 03 03 456</p>
-                <p>Lunes a viernes de 8 a 18hs.</p>
-                <p>Email: info@PythonStore.com</p>
-            </div>
-            <div>
+            <nav>
                 <ul>
-                    <li><a href="facebook.com"><img src="#" alt="">Facebook</a></li>
-                    <li><a href="instagram.com"><img src="#" alt="">Instagram</a></li>
-                    <li><a href="twiter.com"><img src="#" alt="">Twitter</a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="acercaDe.html">Acerca de</a></li>
                 </ul>
-                
+            </nav>
+            <div class="logo-boton">
+                <a href="inicioSesion.html">
+                    <img class="logoIMG" src="./imagenes/iniciar-sesion.png" alt="Logo" >
+                </a>
             </div>
-        </div>
-        
-        <div class="footerInferior">
-            <div>
-                <p>&copy; 2024 PythonStore - Todos los derechos reservados.</p>
+        </header>
+        <hr>
+        <main>
+            <div class="marquee">
+                <div class="marquee-content">
+                    <span>Últimas novedades en tecnología: Laptops, Desktops, Software y más!</span>
+                    <span>Grandes descuentos en productos seleccionados!</span>
+                    <span>Nuevos ingresos: accesorios de gaming de alta calidad!</span>
+                    <span>Servicios de soporte técnico profesional!</span>
+                </div>
             </div>
-        </div>    
-        
-        
-    </footer>
-
-
-<script src="./scripts/ocultarMarquee.js"></script>    
+            <section class="titulo-descripcion">
+                <h1>Python Store</h1>
+                <p id="epigrafe">Tu fuente confiable para hardware, software y soluciones tecnológicas</p>
+            </section>
+            <div class="imagen-principal">
+                <img id="imgPrincipal" src="./imagenes/imgIndex3.jpg" alt="gabinete con luz roja">
+            </div>
+            <div class="botones">
+                <a href="productos.html" class="boton">Ir a la Tienda</a>
+                <a href="contacto.html" class="boton">Contactenos</a>
+                <a href="inicioSesion.html" class="boton">Registrate Ahora!</a>
+            </div>
+        </main>
+        <hr>
+        <footer>
+            <div class="footerSuperior">
+                <div>
+                    <h3>Atención al cliente</h3>
+                    <p>Dirección: Santa Fe 1430, Buenos Aires, Argentina</p>
+                    <p>Teléfono: +11 03 03 456</p>
+                    <p>Lunes a viernes de 8 a 18hs.</p>
+                    <p>Email: info@PythonStore.com</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="facebook.com"><img src="#" alt="">Facebook</a></li>
+                        <li><a href="instagram.com"><img src="#" alt="">Instagram</a></li>
+                        <li><a href="twiter.com"><img src="#" alt="">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footerInferior">
+                <div>
+                    <p>&copy; 2024 PythonStore - Todos los derechos reservados.</p>
+                </div>
+            </div>    
+        </footer>
+    </div>
+    <script src="./scripts/precarga.js"></script>
 </body>
 </html>
