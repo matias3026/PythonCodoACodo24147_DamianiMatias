@@ -1,4 +1,4 @@
-/* Estilos generales (mantenidos de tu código original) */
+/* Estilos generales  */
 main {
     display: flex;
     flex-direction: column;
@@ -100,9 +100,9 @@ label {
     cursor: pointer;
 }
 
-/* Media queries para hacer el diseño responsivo */
+/* Media queries */
 
-/* Punto de corte para pantallas pequeñas (480px o menos) */
+/*  pantallas pequeñas (480px o menos) */
 @media (max-width: 480px) {
     .contacto-container {
         width: 90%;
@@ -131,8 +131,8 @@ label {
 
     /* Cambios en estilos visuales */
     .btn {
-        padding: 12px 25px; /* Botones más grandes */
-        font-size: 1.1em; /* Texto más grande */
+        padding: 12px 25px; 
+        font-size: 1.1em; 
 
     }
 
@@ -168,7 +168,7 @@ label {
     }
 }
 
-/* Punto de corte para pantallas muy grandes (1200px o menos) */
+/*  pantallas muy grandes (1200px o menos) */
 @media (max-width: 1201px) {
     .contacto-container {
         width: 60%;
@@ -179,7 +179,7 @@ label {
         width: 80%;
     }
 
-    /* Más efectos visuales */
+    
     .contacto-container {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
     }
@@ -187,8 +187,8 @@ label {
     .btn {
         padding: 16px 35px;
         font-size: 1.3em;
-        background-color: #004080; /* Otro cambio de color en los botones */
-        border-radius: 10px; /* Bordes más redondeados */
+        background-color: #004080; 
+        border-radius: 10px; 
     }
     #motivo{
         width: 80%;
